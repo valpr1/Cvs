@@ -3,59 +3,14 @@
 @import './theme.css';
 
 @media print {
-  /* Hide the toolbar/header completely */
-  body > div > div:first-child {
+  /* Hide the React app root (everything except the moved CV) */
+  body > *:not(#cv-print) {
     display: none !important;
   }
 
-  /* Reset all parent wrappers */
-  body, html {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: auto !important;
-    height: auto !important;
-  }
-
-  /* Reset the wrapper divs that constrain the CV */
   #cv-print {
-    position: fixed !important;
-    left: 0 !important;
-    top: 0 !important;
-    width: 794px !important;
-    height: 1123px !important;
     transform: none !important;
     box-shadow: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: visible !important;
-  }
-
-  /* Force parent containers to not interfere */
-  #cv-print * {
-    visibility: visible !important;
-  }
-
-  /* Kill all ancestor transforms and overflow that clip the CV */
-  body * {
-    transform: none !important;
-    overflow: visible !important;
-  }
-
-  /* Hide everything that isn't the CV or its ancestors */
-  body *:not(#cv-print):not(#cv-print *) {
-    visibility: hidden;
-    position: static;
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    overflow: hidden;
-  }
-
-  /* Then make the CV and its children visible again */
-  #cv-print, #cv-print * {
-    visibility: visible !important;
   }
 
   @page {
@@ -64,6 +19,8 @@
   }
 
   body {
+    margin: 0;
+    padding: 0;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }

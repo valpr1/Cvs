@@ -7,6 +7,22 @@ export default function App() {
   const [lang, setLang] = useState<Lang>("en");
 
   const exportPdf = useCallback(() => {
+    const cv = document.getElementById("cv-print");
+    if (!cv) return;
+    const parent = cv.parentElement;
+    const nextSibling = cv.nextSibling;
+
+    // Move CV to body root so no parent layout interferes
+    document.body.appendChild(cv);
+    document.body.classList.add("printing");
+
+    const cleanup = () => {
+      document.body.classList.remove("printing");
+      if (parent) parent.insertBefore(cv, nextSibling);
+      window.removeEventListener("afterprint", cleanup);
+    };
+
+    window.addEventListener("afterprint", cleanup);
     window.print();
   }, []);
 
