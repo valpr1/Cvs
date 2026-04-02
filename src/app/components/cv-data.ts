@@ -7,7 +7,7 @@ export const cvData = {
   title: "Engineering Student",
   photo: photoImg,
   about:
-    "Motivated and curious 22-year-old engineering student passionate about mathematics, IT, and innovation. Eager to contribute to collaborative projects and grow through hands-on professional experience. Driven by a strong interest in Web3, AI, and digital technology, I combine technical skills with teamwork and creativity.",
+    "Motivated and curious 22-year-old engineering student passionate about mathematics, IT, and innovation. Eager to contribute to collaborative projects and grow through hands-on professional experience. Driven by a strong interest in cyber, AI, and Web3, I combine technical skills with teamwork and creativity.",
   phone: "+33 622 271 759",
   email: "valentin.portal@etu.estia.fr",
   address: "3 rue docteur Voulgre, 64100 Bayonne",
@@ -23,7 +23,17 @@ export const cvData = {
     "Project Management",
     "Innovation Methods",
   ],
-  software: ["Figma", "Notion", "Cursor", "HTML/CSS/JS", "Python", "Git", "SolidWorks", "Design Fiction"],
+  software: [
+    "Figma",
+    "Notion",
+    "Cursor",
+    "Claude Code",
+    "HTML/CSS/JS",
+    "Python",
+    "Git",
+    "SolidWorks",
+    "Design Fiction",
+  ],
   softSkills: [
     { name: "Teamwork", rating: 5 },
     { name: "Innovation", rating: 5 },
@@ -38,13 +48,21 @@ export const cvData = {
     "Innovation – AI, Finance, Digital Tech",
     "Travelling",
   ],
-  interests: ["Sport", "Travelling", "Web3", "AI", "Innovation"],
+  interests: [
+    "Sport",
+    "Travelling",
+    "Cybersecurity",
+    "Web3",
+    "AI",
+    "Innovation",
+  ],
   experience: [
     {
       period: "Jan – Mar 2026",
       role: "Pionniers Program – Start-Up Manager Jr",
       company: "Le Connecteur (France)",
-      description: "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed a digital tools/solutions.",
+      description:
+        "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed a digital tools/solutions.",
     },
     {
       period: "Feb – Mar 2025",
@@ -72,7 +90,7 @@ export const cvData = {
       role: "Internship – Dive Center",
       company: "Dive Point Zanzibar (Matemwe, Tanzania)",
       description:
-        "Maintained diving center equipment, provided customer service, assisted in diving activities, and participated in the \"Linda Bahari\" coral reef restoration project.",
+        'Maintained diving center equipment, provided customer service, assisted in diving activities, and participated in the "Linda Bahari" coral reef restoration project.',
     },
     {
       period: "Jul 2022",
@@ -84,6 +102,13 @@ export const cvData = {
   ],
   education: [
     {
+      year: "2026 – Present",
+      school:
+        "Hokkaido University, Information Science and Technology",
+      degree:
+        "Master Degree – Exchange semester at Hokkaido University with coursework in advanced information science and technology",
+    },
+    {
       year: "2024 – Present",
       school: "ESTIA School of Engineering",
       degree:
@@ -92,18 +117,17 @@ export const cvData = {
     {
       year: "2022 – 2024",
       school: "ESTIA – Integrated Preparatory Course",
-      degree: "Intensive 2-year preparatory programme in science and engineering fundamentals",
+      degree:
+        "Intensive 2-year preparatory programme in science and engineering fundamentals",
     },
     {
       year: "2019",
       school: "Language Exchange in Ireland",
-      degree: "Immersion in an Irish family to improve English proficiency",
+      degree:
+        "Immersion in an Irish family to improve English proficiency",
     },
   ],
-  extras: [
-    "Driver's License (Category B)",
-    "Boat License",
-  ],
+  extras: ["Driver's License (Category B)", "Boat License"],
 };
 
 export const cvDataFr = {
@@ -111,7 +135,7 @@ export const cvDataFr = {
   title: "Étudiant en Ingénierie",
   photo: photoImg,
   about:
-    "Étudiant en ingénierie de 22 ans, motivé et curieux, passionné par les mathématiques, l'informatique et l'innovation. Désireux de contribuer à des projets collaboratifs et de progresser grâce à des expériences professionnelles concrètes. Animé par un fort intérêt pour le Web3, l'IA et le numérique, j'allie compétences techniques, travail d'équipe et créativité.",
+    "Étudiant en ingénierie de 22 ans, motivé et curieux, passionné par les mathématiques, l'informatique et l'innovation. Désireux de contribuer à des projets collaboratifs et de progresser grâce à des expériences professionnelles concrètes. Animé par un fort intérêt pour la cyber, l'IA et le Web3, j'allie compétences techniques, travail d'équipe et créativité.",
   phone: "+33 622 271 759",
   email: "valentin.portal@etu.estia.fr",
   address: "3 rue docteur Voulgre, 64100 Bayonne",
@@ -125,9 +149,19 @@ export const cvDataFr = {
     "Modélisation CAO",
     "Prototyping",
     "Management Projet",
-    "Méthode d'Innovation",
+    "Méthodes d'Innovation",
   ],
-  software: ["Figma", "Notion", "Cursor", "HTML/CSS/JS", "Python", "Git", "SolidWorks", "Design Fiction"],
+  software: [
+    "Figma",
+    "Notion",
+    "Cursor",
+    "Claude Code",
+    "HTML/CSS/JS",
+    "Python",
+    "Git",
+    "SolidWorks",
+    "Design Fiction",
+  ],
   softSkills: [
     { name: "Travail d'équipe", rating: 5 },
     { name: "Innovation", rating: 5 },
@@ -142,13 +176,21 @@ export const cvDataFr = {
     "Innovation – IA, Finance, Tech",
     "Voyages",
   ],
-  interests: ["Sport", "Voyages", "Web3", "IA", "Innovation"],
+  interests: [
+    "Sport",
+    "Voyages",
+    "Cybersecurity",
+    "Web3",
+    "IA",
+    "Innovation",
+  ],
   experience: [
     {
       period: "Jan – Mar 2026",
       role: "Pionniers Program – Start-Up Manager Jr",
       company: "Le Connecteur (France)",
-      description: "Start-Up Manager Junior dans un programme d'Open Innovation. Cadrage stratégique des défis d'entreprise, accompagnement d'équipes étudiantes pluridisciplinaires et développement d'outils/solutions numériques.",
+      description:
+        "Start-Up Manager Junior dans un programme d'Open Innovation. Cadrage stratégique des défis d'entreprise, accompagnement d'équipes étudiantes pluridisciplinaires et développement d'outils/solutions numériques.",
     },
     {
       period: "Fév – Mar 2025",
@@ -176,7 +218,7 @@ export const cvDataFr = {
       role: "Stage – Centre de plongée",
       company: "Dive Point Zanzibar (Matemwe, Tanzanie)",
       description:
-        "Entretien du matériel de plongée, accueil et service client, assistance aux activités de plongée et participation au projet de restauration corallienne \"Linda Bahari\".",
+        'Entretien du matériel de plongée, accueil et service client, assistance aux activités de plongée et participation au projet de restauration corallienne "Linda Bahari".',
     },
     {
       period: "Juil 2022",
@@ -188,6 +230,13 @@ export const cvDataFr = {
   ],
   education: [
     {
+      year: "2026 – Présent",
+      school:
+        "Hokkaido University, Information Science and Technology",
+      degree:
+        "Master Degree – Semestre d'échange à l'Université d'Hokkaido avec des cours en sciences et technologies de l'information avancées",
+    },
+    {
       year: "2024 – Présent",
       school: "ESTIA – École d'Ingénieurs",
       degree:
@@ -196,18 +245,17 @@ export const cvDataFr = {
     {
       year: "2022 – 2024",
       school: "ESTIA – Cycle Préparatoire Intégré",
-      degree: "Programme intensif de 2 ans en sciences fondamentales et ingénierie",
+      degree:
+        "Programme intensif de 2 ans en sciences fondamentales et ingénierie",
     },
     {
       year: "2019",
       school: "Séjour linguistique en Irlande",
-      degree: "Immersion dans une famille irlandaise pour perfectionner l'anglais",
+      degree:
+        "Immersion dans une famille irlandaise pour perfectionner l'anglais",
     },
   ],
-  extras: [
-    "Permis B",
-    "Permis Bateau",
-  ],
+  extras: ["Permis B", "Permis Bateau"],
 };
 
 export function getCvData(lang: Lang) {
