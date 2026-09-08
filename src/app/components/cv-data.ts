@@ -7,7 +7,7 @@ export const cvData = {
   title: "Engineering Student",
   photo: photoImg,
   about:
-    "Motivated and curious 22-year-old engineering student passionate about mathematics, IT, and innovation. Eager to contribute to collaborative projects and grow through hands-on professional experience. Driven by a strong interest in cyber, AI, and Web3, I combine technical skills with teamwork and creativity.",
+    "Motivated and curious 22-year-old engineering student passionate about mathematics, IT, and innovation. Eager to contribute to collaborative projects and grow through hands-on professional experience. Driven by a strong interest in cybersecurity, AI, and Web3, I combine technical skills with teamwork and creativity.",
   phone: "+33 622 271 759",
   email: "valentin.portal@etu.estia.fr",
   address: "3 rue docteur Voulgre, 64100 Bayonne",
@@ -102,7 +102,7 @@ export const cvData = {
   ],
   education: [
     {
-      year: "2026 – Present",
+      year: "Mar - Aug 2026",
       school:
         "Hokkaido University, Information Science and Technology",
       degree:
@@ -112,7 +112,7 @@ export const cvData = {
       year: "2024 – Present",
       school: "ESTIA School of Engineering",
       degree:
-        "Engineering Cycle (1st year) – École Supérieures des Technologies Industrielles Avancées",
+        "Engineering Cycle (3rd year) – École Supérieures des Technologies Industrielles Avancées",
     },
     {
       year: "2022 – 2024",
@@ -135,7 +135,7 @@ export const cvDataFr = {
   title: "Étudiant en Ingénierie",
   photo: photoImg,
   about:
-    "Étudiant en ingénierie de 22 ans, motivé et curieux, passionné par les mathématiques, l'informatique et l'innovation. Désireux de contribuer à des projets collaboratifs et de progresser grâce à des expériences professionnelles concrètes. Animé par un fort intérêt pour la cyber, l'IA et le Web3, j'allie compétences techniques, travail d'équipe et créativité.",
+    "Étudiant en ingénierie de 22 ans, motivé et curieux, passionné par les mathématiques, l'informatique et l'innovation. Désireux de contribuer à des projets collaboratifs et de progresser grâce à des expériences professionnelles concrètes. Animé par un fort intérêt pour la cybersécurité, l'IA et le Web3, j'allie compétences techniques, travail d'équipe et créativité.",
   phone: "+33 622 271 759",
   email: "valentin.portal@etu.estia.fr",
   address: "3 rue docteur Voulgre, 64100 Bayonne",
@@ -230,7 +230,7 @@ export const cvDataFr = {
   ],
   education: [
     {
-      year: "2026 – Présent",
+      year: "Mar - Août 2026",
       school:
         "Hokkaido University, Information Science and Technology",
       degree:
@@ -240,7 +240,7 @@ export const cvDataFr = {
       year: "2024 – Présent",
       school: "ESTIA – École d'Ingénieurs",
       degree:
-        "Cycle Ingénieur (1ère année) – École Supérieure des Technologies Industrielles Avancées",
+        "Cycle Ingénieur (3ème année) – École Supérieure des Technologies Industrielles Avancées",
     },
     {
       year: "2022 – 2024",
@@ -249,7 +249,7 @@ export const cvDataFr = {
         "Programme intensif de 2 ans en sciences fondamentales et ingénierie",
     },
     {
-      year: "2019",
+      year: "Juin 2019",
       school: "Séjour linguistique en Irlande",
       degree:
         "Immersion dans une famille irlandaise pour perfectionner l'anglais",
