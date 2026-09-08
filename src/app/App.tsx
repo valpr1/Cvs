@@ -6,7 +6,7 @@ import type { Lang } from "./components/cv-data";
 export default function App() {
   const [lang, setLang] = useState<Lang>("en");
 
-  const exportPdf = useCallback(() => {
+  const exportPdf = useCallback(async () => {
     const cv = document.getElementById("cv-print");
     if (!cv) return;
     const parent = cv.parentElement;
@@ -23,6 +23,24 @@ export default function App() {
     };
 
     window.addEventListener("afterprint", cleanup);
+
+    // Attendre que toutes les polices (Poppins etc.) soient réellement
+    // chargées avant de lancer l'impression, pour éviter le fallback
+    // système / faux-gras figé dans le PDF.
+    try {
+      await document.fonts.ready;
+    } catch {
+      // Si l'API n'est pas dispo ou échoue, on continue quand même
+    }
+
+    // Petite marge de sécurité supplémentaire : laisse le temps au
+    // navigateur de finir un repaint après le chargement des polices.
+    await new Promise((resolve) =>
+      requestAnimationFrame(() =>
+        requestAnimationFrame(resolve),
+      ),
+    );
+
     window.print();
   }, []);
 
@@ -30,8 +48,12 @@ export default function App() {
     <div className="min-h-screen bg-[#0f0f0f] flex flex-col items-center font-['Inter',sans-serif]">
       <div className="bg-[#1a1a1a] border-b border-white/5 px-6 py-4 flex items-center justify-between w-full shrink-0">
         <div>
-          <h1 className="text-white text-[18px] font-semibold">CV – Valentin Portal</h1>
-          <p className="text-white/40 text-[12px] mt-0.5">Corporate Template</p>
+          <h1 className="text-white text-[18px] font-semibold">
+            CV – Valentin Portal
+          </h1>
+          <p className="text-white/40 text-[12px] mt-0.5">
+            Corporate Template
+          </p>
         </div>
         <div className="flex items-center gap-3">
           {/* Language selector */}
@@ -61,7 +83,13 @@ export default function App() {
       </div>
 
       <div className="flex-1 overflow-auto flex justify-center p-8">
-        <div className="shrink-0" style={{ transform: "scale(0.85)", transformOrigin: "top center" }}>
+        <div
+          className="shrink-0"
+          style={{
+            transform: "scale(0.85)",
+            transformOrigin: "top center",
+          }}
+        >
           <div id="cv-print" className="shadow-2xl">
             <CvCorporate lang={lang} />
           </div>
