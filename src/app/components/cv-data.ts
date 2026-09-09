@@ -120,12 +120,12 @@ export const cvData = {
       degree:
         "Intensive 2-year preparatory programme in science and engineering fundamentals",
     },
-    {
+    /**{
       year: "2019",
       school: "Language Exchange in Ireland",
       degree:
         "Immersion in an Irish family to improve English proficiency",
-    },
+    },**/
   ],
   extras: ["Driver's License (Category B)", "Boat License"],
 };
@@ -248,12 +248,12 @@ export const cvDataFr = {
       degree:
         "Programme intensif de 2 ans en sciences fondamentales et ingénierie",
     },
-    {
+    /**{
       year: "Juin 2019",
       school: "Séjour linguistique en Irlande",
       degree:
         "Immersion dans une famille irlandaise pour perfectionner l'anglais",
-    },
+    },**/
   ],
   extras: ["Permis B", "Permis Bateau"],
 };
