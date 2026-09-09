@@ -39,10 +39,32 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
               <stop offset="0%" stopColor="#1a3a5c" />
               <stop offset="100%" stopColor="#2980b9" />
             </linearGradient>
+            <pattern
+              id="headerDots"
+              width="20"
+              height="20"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="2" cy="2" r="1" fill="white" />
+            </pattern>
+            <clipPath id="headerClip">
+              <polygon points="0,0 794,0 794,80 0,120" />
+            </clipPath>
           </defs>
+
           <polygon
             points="0,0 794,0 794,80 0,120"
             fill="url(#headerGradient)"
+          />
+
+          <rect
+            x="0"
+            y="0"
+            width="794"
+            height="120"
+            fill="url(#headerDots)"
+            opacity="0.1"
+            clipPath="url(#headerClip)"
           />
         </svg>
       </div>
