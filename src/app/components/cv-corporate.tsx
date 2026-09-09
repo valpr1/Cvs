@@ -21,14 +21,15 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
     <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-sans relative">
       {/* Top bar */}
       <div className="h-[120px] bg-gradient-to-r from-[#1a3a5c] to-[#2980b9] relative">
-        <div
+        {/*         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
               "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
             backgroundSize: "20px 20px",
           }}
-        />
+        /> */}
+
         <svg
           className="absolute bottom-0 left-0"
           width="794"
