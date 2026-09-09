@@ -180,7 +180,7 @@ export const cvDataFr = {
   interests: [
     "Sport",
     "Voyages",
-    "Cybersecurity",
+    "Cybersécurité",
     "Web3",
     "IA",
     "Finance",
