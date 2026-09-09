@@ -20,25 +20,30 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
   return (
     <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-sans relative">
       {/* Top bar */}
-      <div className="h-[120px] bg-gradient-to-r from-[#1a3a5c] to-[#2980b9] relative">
-        {/*         <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "20px 20px",
-          }}
-        /> */}
-
+      <div className="h-[120px] relative">
         <svg
-          className="absolute bottom-0 left-0"
+          className="absolute inset-0"
           width="794"
-          height="40"
-          viewBox="0 0 794 40"
+          height="120"
+          viewBox="0 0 794 120"
           preserveAspectRatio="none"
-          style={{ display: "block" }}
         >
-          <polygon points="0,40 794,40 794,0" fill="white" />
+          <defs>
+            <linearGradient
+              id="headerGradient"
+              x1="0"
+              y1="0"
+              x2="1"
+              y2="0"
+            >
+              <stop offset="0%" stopColor="#1a3a5c" />
+              <stop offset="100%" stopColor="#2980b9" />
+            </linearGradient>
+          </defs>
+          <polygon
+            points="0,0 794,0 794,80 0,120"
+            fill="url(#headerGradient)"
+          />
         </svg>
       </div>
 
