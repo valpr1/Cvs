@@ -18,7 +18,7 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
   const data = getCvData(lang);
   const l = labels[lang];
   return (
-    <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-sans relative">
+    <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-['Poppins',sans-serif] relative">
       {/* Top bar */}
       <div className="h-[120px] relative">
         <svg
@@ -190,24 +190,14 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
               <Users size={11} className="text-[#2980b9]" />
               {l.softSkills}
             </h2>
-            <div className="space-y-2">
+            <div className="flex flex-wrap gap-1">
               {data.softSkills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between mb-0.5">
-                    <span className="text-[10px] text-[#555]">
-                      {skill.name}
-                    </span>
-                    <span className="text-[10px] text-[#2980b9]">
-                      {skill.rating * 20}%
-                    </span>
-                  </div>
-                  <div className="w-full bg-[#e9ecef] rounded-full h-1">
-                    <div
-                      className="bg-[#2980b9] h-1 rounded-full"
-                      style={{ width: `${skill.rating * 20}%` }}
-                    />
-                  </div>
-                </div>
+                <span
+                  key={skill.name}
+                  className="bg-white text-[#1a3a5c] text-[10px] px-2 py-0.5 rounded-md border border-[#e9ecef] font-medium"
+                >
+                  {skill.name}
+                </span>
               ))}
             </div>
           </div>
@@ -258,7 +248,7 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
               {data.interests.map((h) => (
                 <span
                   key={h}
-                  className="text-[10px] text-[#555] bg-white px-2 py-0.5 rounded-md border border-[#e9ecef]"
+                  className="bg-white text-[#1a3a5c] text-[10px] px-2 py-0.5 rounded-md border border-[#e9ecef] font-medium"
                 >
                   {h}
                 </span>
