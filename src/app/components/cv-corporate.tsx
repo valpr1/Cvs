@@ -114,7 +114,7 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
               <span className="w-5 h-0.5 bg-[#2980b9]" />
               {l.profile}
             </h2>
-            <p className="text-[10.5px] leading-[1.7] text-[#555]">
+            <p className="text-[16px] leading-[1.7] text-[#555]">
               {data.about}
             </p>
           </div>
