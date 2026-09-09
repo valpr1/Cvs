@@ -94,7 +94,7 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
           { icon: Phone, text: data.phone },
           { icon: Mail, text: data.email },
           { icon: Home, text: data.address },
-          { icon: MapPin, text: data.location },
+          /*{ icon: MapPin, text: data.location },*/
         ].map((item, i) => (
           <div key={i} className="flex items-center gap-2">
             <item.icon size={12} className="text-[#2980b9]" />

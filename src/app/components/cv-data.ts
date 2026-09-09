@@ -62,7 +62,7 @@ export const cvData = {
       role: "Pionniers Program – Start-Up Manager Jr",
       company: "Le Connecteur (France)",
       description:
-        "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed a digital tools/solutions.",
+        "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed digital tools/solutions.",
     },
     {
       period: "Feb – Mar 2025",
@@ -145,10 +145,10 @@ export const cvDataFr = {
   skills: [
     "Anglais – C1 (IELTS)",
     "Espagnol – B2 (SIELE)",
-    "Web Development",
+    "Développement Web",
     "Modélisation CAO",
-    "Prototyping",
-    "Management Projet",
+    "Prototypage",
+    "Gestion de Projet",
     "Méthodes d'Innovation",
   ],
   software: [
