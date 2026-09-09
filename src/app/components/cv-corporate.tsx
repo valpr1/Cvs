@@ -18,7 +18,7 @@ export function CvCorporate({ lang = "en" }: { lang?: Lang }) {
   const data = getCvData(lang);
   const l = labels[lang];
   return (
-    <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-['Poppins',sans-serif] relative">
+    <div className="w-[794px] h-[1123px] bg-white text-[#2c3e50] font-sans relative">
       {/* Top bar */}
       <div className="h-[120px] relative">
         <svg
