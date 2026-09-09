@@ -54,6 +54,7 @@ export const cvData = {
     "Cybersecurity",
     "Web3",
     "AI",
+    "Finance",
     "Innovation",
   ],
   experience: [
@@ -182,6 +183,7 @@ export const cvDataFr = {
     "Cybersecurity",
     "Web3",
     "IA",
+    "Finance",
     "Innovation",
   ],
   experience: [
