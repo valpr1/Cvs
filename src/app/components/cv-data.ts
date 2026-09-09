@@ -63,7 +63,7 @@ export const cvData = {
       role: "Pionniers Program – Start-Up Manager Jr",
       company: "Le Connecteur (France)",
       description:
-        "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed digital tools/solutions.",
+        "Startup Manager Junior for an Open Innovation program. Strategically framed corporate challenges, mentored multidisciplinary student teams, and developed digital tools/solutions. Promoted to Junior Start-up Manager following my first involvement in 2025.",
     },
     {
       period: "Feb – Mar 2025",
@@ -103,7 +103,7 @@ export const cvData = {
   ],
   education: [
     {
-      year: "Mar - Aug 2026",
+      year: "Apr – Aug 2026",
       school:
         "Hokkaido University, Information Science and Technology",
       degree:
@@ -113,7 +113,7 @@ export const cvData = {
       year: "2024 – Present",
       school: "ESTIA School of Engineering",
       degree:
-        "Engineering Cycle (3rd year) – École Supérieures des Technologies Industrielles Avancées",
+        "Engineering Cycle (3rd year) – École Supérieure des Technologies Industrielles Avancées",
     },
     {
       year: "2022 – 2024",
@@ -137,7 +137,7 @@ export const cvDataFr = {
   photo: photoImg,
   about:
     "Étudiant en ingénierie de 22 ans, motivé et curieux, passionné par les mathématiques, l'informatique et l'innovation. Désireux de contribuer à des projets collaboratifs et de progresser grâce à des expériences professionnelles concrètes. Animé par un fort intérêt pour la cybersécurité, l'IA et le Web3, j'allie compétences techniques, travail d'équipe et créativité.",
-  phone: "+33 622 271 759",
+  phone: "+33 6 22 27 17 59",
   email: "valentin.portal@etu.estia.fr",
   address: "3 rue docteur Voulgre, 64100 Bayonne",
   linkedin: "linkedin.com/in/valentinportal",
@@ -232,7 +232,7 @@ export const cvDataFr = {
   ],
   education: [
     {
-      year: "Mar - Août 2026",
+      year: "Avr - Août 2026",
       school:
         "Hokkaido University, Information Science and Technology",
       degree:
